@@ -42,12 +42,17 @@ body {
     font-size: 20px;
     color: white;
     background-color: black;
-    border-bottom: .25rem solid transparent;
 }
 
-.intro-porfolio-nav-item > .nav-link:hover,
-.intro-porfolio-nav-item > .nav-link:focus {
-    border-bottom: .25rem solid white;
+@media all and (min-width: 769px) {
+    .intro-porfolio-nav-item > .nav-link {
+        border-bottom: .25rem solid transparent;
+    }
+
+    .intro-porfolio-nav-item > .nav-link:hover,
+    .intro-porfolio-nav-item > .nav-link:focus {
+        border-bottom: .25rem solid white;
+    }
 }
 
 /* ==============================================================*/
@@ -237,5 +242,67 @@ body {
     .intro-porfolio-image img {
         width: 65%;
         height: 65%;
+    }
+}
+
+
+.intro-porfolio-nav-menu {
+    display: none;
+    background-color: black;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+@media all and (max-width: 768px) {
+    .intro-porfolio-nav-item {
+        position: fixed;
+        left: -100%;
+        top: 3rem;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+        text-align: center;
+        width: 100%;
+        transition: 0.3s;
+        text-decoration: none;
+    }
+
+    .intro-porfolio-nav-item.active {
+        left: 0;
+    }
+
+    .intro-porfolio-nav-item.active > .nav-link {
+        border-bottom: unset;
+    }
+    
+    .intro-porfolio-nav-item.active > .nav-link:hover,
+    .intro-porfolio-nav-item.active > .nav-link:focus {
+        border-bottom: unset;
+    }
+
+    .intro-porfolio-nav-menu {
+        display: block;
+        cursor: pointer;
+        float: right;
+    }
+
+    .intro-porfolio-nav-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .intro-porfolio-nav-menu.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .intro-porfolio-nav-menu.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 }
