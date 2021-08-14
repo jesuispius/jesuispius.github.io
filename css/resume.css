@@ -1,0 +1,146 @@
+/* Resume */
+.resume-content {
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.resume-section h1 {
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    color:  #e75eff;
+    padding-top: 20px;
+}
+
+.vertical-line {
+    height: 35px;
+    width: 49.3%;
+    content: "";
+}
+
+.resume-header-tab {
+    margin: 10px 0;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    color:  #e75eff;
+}
+
+.resume-header-tab .vertical-line:nth-child(2n + 1) {
+    border-right: 3px dotted #e75eff;
+    margin: 10px;
+}
+
+#resume-content-self {
+    padding: 20px;
+    color: white;
+    border: 2px solid var(--lightmagenta);
+    border-radius: 20px;
+}
+
+#resume-content-self .resume-content-self-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid var(--lightmagenta);
+}
+
+.resume-content-self-text h2 {
+    color: var(--yellow);
+    font-weight: 900;
+}
+
+.resume-content-self-text h5 {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.resume-content-self-text h6 {
+    color: white;
+}
+
+.resume-content-self-text h6 span {
+    margin-right: 5px;
+}
+
+
+#resume-content-self .row .img {
+    border-right: dotted 1px #e75eff;
+}
+
+.resume-content-obj {
+    text-align: center;
+    vertical-align: middle;
+    padding: 2% 15%;
+    border: 2px solid var(--lightmagenta);
+    border-radius: 20px;
+}
+
+.resume-content-education {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: 2px solid var(--lightmagenta);
+    border-radius: 20px;
+}
+
+#resume-content-education .period {
+    border-right: dotted 1px #e75eff;
+}
+
+.resume-content-experience {
+    padding: 5%;
+    border: 2px solid var(--lightmagenta);
+    border-radius: 20px;
+}
+
+
+.resume-content-skills {
+    padding: 5%;
+    border: 2px solid var(--lightmagenta);
+    border-radius: 20px;
+}
+
+
+.resume-content-skills-items {
+    font-size: 1.2em;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+
+
+
+.resume-content-languages {
+    padding: 5%;
+    border: 2px solid var(--lightmagenta);
+    border-radius: 20px;
+}
+
+.resume-content-languages li {
+    font-size: 15px;
+}
+
+
+/*SOCIAL*/
+#social-contact {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    margin-top: 15px;
+}
+
+#social-contact .btn-circle {
+    vertical-align: middle;
+    border: 1px solid #EA80FC;
+    padding: 6px 11px;
+}
+
+#social-contact .btn-circle svg {
+    padding-bottom: 1px;
+    margin-bottom: 1px;
+}
+
+#social-contact a {
+    color: #EA80FC;
+    font-size: 14px;
+    text-decoration: none;
+}
