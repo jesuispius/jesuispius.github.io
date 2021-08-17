@@ -39,12 +39,4 @@ $(document).ready(function () {
         render_lang_item.append(lang_text, lang_progress);
     });
     $(".resume-content-languages").append(render_lang_item);
-
-
-    // Break between the eduction school section 
-    /*let current_width_window = $(window).width();
-    if (current_width_window >= 768) {
-        let hr = $("<hr></hr>").css("height", "2px").css("color", "#ff66ff");
-        $("#education-section-break").append(hr);
-    }*/
 });

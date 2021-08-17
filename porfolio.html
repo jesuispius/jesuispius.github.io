@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Porfolio</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" />
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/intro.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/resume.css" />
+    <link rel="stylesheet" href="css/project.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
     <script defer src="js/navbar.js"></script>
     <script defer src="js/resume.js"></script>
   </head>
@@ -34,11 +40,11 @@
         </div>
 
         <main class="row justify-content-center">
-          <ul class="col-12 col-md-5 col-xl-6 px-3 intro-porfolio-text m-auto">
+          <ul class="col-12 col-md-5 col-xl-6 px-3 intro-porfolio-text m-auto" data-aos="flip-left" data-aos-easing="ease-out-cubic">
             <li>Hello,</li>
             <li>I'm Phuoc!</li>
           </ul>
-          <div class="col-12 col-md-7 col-xl-6 intro-porfolio-image m-auto">
+          <div class="col-12 col-md-7 col-xl-6 intro-porfolio-image m-auto" data-aos="fade-left">
             <img src="image/photograph.png" alt="photograph" />
           </div>
         </main>
@@ -46,7 +52,7 @@
     </div>
 
     <!-- ABOUT SECTION-->
-    <section id="about" class="container main-section">
+    <section id="about" class="container main-section" data-aos="zoom-in">
       <h1>.about("me"):</h1>
       <div class="about-content">
         <img src="image/photograph_2.png" alt="Photograph of myself" id="self-image">
@@ -60,12 +66,12 @@
     </section>
 
     <!-- RESUME SECTION -->
-    <section id="resume" class="container resume-section">
+    <section id="resume" class="container resume-section" data-aos="fade-up">
       <h1>.resume():</h1>
       <div class="resume-content">
         <div id="resume-content-self">
           <div class="row justify-content-center">
-            <div class="col-12 col-md-4 img text-center resume-content-self-image m-auto">
+            <div class="col-12 col-md-4 img text-center resume-content-self-image m-auto" data-aos="flip-up">
               <img src="image/resume.jpg" alt="photograph-resume" />
             </div>
             <div class="col-12 col-md-8 mt-4 mt-md-0 ps-md-5 resume-content-self-text">
@@ -125,7 +131,7 @@
           </div>
         </div>
 
-        <div id="resume-content-obj">
+        <div id="resume-content-obj" data-aos="fade-up">
           <div class="resume-header-tab">
             <div class="vertical-line"></div>
             <div class="text-center fs-4">&#60;Career Objective/&#62;</div>
@@ -136,7 +142,7 @@
           </div>
         </div>
 
-        <div id="resume-content-education">
+        <div id="resume-content-education" data-aos="fade-up">
           <div class="resume-header-tab">
             <div class="vertical-line"></div>
             <div class="text-center fs-4">&#60;Education/&#62;</div>
@@ -189,7 +195,7 @@
         </div>
 
         <div class="row">
-          <div id="resume-content-skills" class="col-12 col-md-7">
+          <div id="resume-content-skills" class="col-12 col-md-7" data-aos="fade-up">
             <div class="resume-header-tab">
               <div class="vertical-line"></div>
               <div class="text-center fs-4">&#60;Skills/&#62;</div>
@@ -198,7 +204,7 @@
             <div class="resume-content-skills"></div>
           </div>
 
-          <div id="resume-content-languages" class="col-12 col-md-5">
+          <div id="resume-content-languages" class="col-12 col-md-5" data-aos="fade-up">
             <div class="resume-header-tab">
               <div class="vertical-line"></div>
               <div class="text-center fs-4">&#60;Languages/&#62;</div>
@@ -210,5 +216,112 @@
         </div>
       </div>
     </section>
+
+    <!-- PROJECT SECTION-->
+    <section id="project-section" class="container main-section">
+      <h1 data-aos="zoom-in">.project():</h1>
+      <div class="project-section-content">
+
+        <!-- FIRST PROJECT-->
+        <div class="container" id="project-section-content-first" data-aos="zoom-in">
+          <div class="project-section-subcontent row g-5">
+            <div class="col-12 col-lg-6" id="project-section-subcontent-text">
+              <h2>Weather App</h2>
+              <ul>
+                <li>A reponsive webpage built by a bunch of line of JavaScript, HTML, and CSS. Integrated with a modern responsive front-end framework - <strong>Materialize</strong></li>
+                <li>Using the a JS library - <strong>Moment.JS</strong> to manipulate and display the current local time of any geographic coordinates on the globe.</li>
+                <li>Weather data via API provided by <strong><a href="https://api.openweathermap.org" style="text-decoration: none; color: white; font-style: italic;">"OpenWeather Ltd"</a></strong></li>
+                <li>Users can get any weather information by typing any specific location on the search bar.</li>
+                <li>Weather information includes: current weather status (current degree, lowest/highest degree, wind speed, humidit, visibility), forecast weather for the next 36 hours, and for the next 5 days.</li>
+                <li>Purpose: learning web development, working with API, getting familiar with CSS framework</li>
+              </ul>
+              <div id="project-section-subcontent-buttons">
+                <button class="btn btn-md btn-magenta-outline">
+                  <a href="https://jesuispius.github.io/weather_app/weather.html" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
+                      <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+                    </svg>
+                    Website
+                  </a>
+                </button>
+                <button class="btn btn-md btn-magenta-primary">
+                  <a href="https://github.com/jesuispius/weather_app" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Source Code
+                  </a>
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <img src="image/weather.JPG" id="project-section-subcontent-img" class="img-fluid" alt="weather-app"/>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- SECOND PROJECT-->
+        <div class="container" id="project-section-content-second" data-aos="zoom-in">
+          <div class="project-section-subcontent row g-5">
+            <div class="col-12 col-lg-6" id="project-section-subcontent-text">
+              <h2>Self-Attendance Management System </h2>
+              <ul>
+                <li>A simple program, which is automatically takes attendance of a group of people, built by using <strong>Python</strong> programming language.</li>
+                <li>Using an open-source python library - <strong><a href="https://opencv.org/" style="text-decoration: none; color: white;">OpenCV </a></strong>for real-time image capturing, image processing, and identifying target objects.</li>
+                <li>Using "Haar feature-based cascade classifiers" for facial detection.</li>
+                <li>User interface designed by two versions, open-source Python UI libraries - <strong>Kivy</strong> and <strong>Tkinter</strong>.</li>
+                <li>Users' information (name, image) are taken after capturing, then data is trained and stored under a database file with extension - "yml". Eventually, the system automatically tracks and generates a "csv" report file.</li>
+                <li>Purpose: practicing Python, building user interface, working with OpenCV, and understanding the general structure of facial detection.</li>
+              </ul>
+              <div id="project-section-subcontent-buttons">
+                <button class="btn btn-md btn-magenta-outline">
+                  <a href="https://github.com/jesuispius/Attendance_Management_System" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    Source Code
+                  </a>
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <img src="image/attendance.JPG" id="project-section-subcontent-img" class="img-fluid" alt="weather-app"/>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- THIRD PROJECT-->
+        <div class="container" id="project-section-content-third" data-aos="zoom-in">
+          <div class="project-section-subcontent row g-5">
+            <div class="col-12 col-lg-6" id="project-section-subcontent-text">
+              <h2>E-Commerce Website</h2>
+              <ul>
+                <li>Collaborate to redesign an e-commerce website of a company, using a modern JavaScript framework - <strong>Blitz.JS</strong>.</li>
+                <li>Using CSS Framework - <strong>Bootstrap</strong>, and <strong>React</strong> for front-end</li>
+                <li>Using <strong>Prisma 2</strong> - a strongly typed database client.</li>
+                <li>Creating, validating, and authenticating all forms (login, signup, password changing, checkout, etc).</li>
+                <li>Paypal transaction.</li>
+                <li>Paginating and creating pages with dynamic routes.</li>
+              </ul>
+
+              <p>* Since the project is in progress, I cannot share the website or source code links!</p>
+            </div>
+            <div class="col-12 col-lg-6">
+              <img src="image/weather.JPG" id="project-section-subcontent-img" class="img-fluid" alt="weather-app"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 1500,
+      });
+    </script>
   </body>
 </html>
