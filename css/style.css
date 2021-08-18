@@ -8,6 +8,15 @@
     --lightestpurple: #ebc0fd;
     --lightmagenta: #e75eff;
     --yellow: #FFD54F;
+    --warning: #FFC107;
+}
+
+.text-magenta {
+    color: var(--lightmagenta);
+}
+
+.bg-magenta {
+    background-color: var(--lightmagenta);
 }
 
 .btn-magenta-primary,

@@ -1,3 +1,15 @@
+.project-section {
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.project-section h1 {
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    color:  #e75eff;
+    padding-top: 20px;
+}
+
 #project-section-content-first,
 #project-section-content-second,
 #project-section-content-third {
