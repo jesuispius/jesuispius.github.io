@@ -11,15 +11,3 @@ navLink.forEach(link => link.addEventListener("click", () => {
     navMenu.classList.remove("active");
     navItem.classList.remove("active");
 }));
-
-/*const greetings = document.querySelector(".intro-porfolio-text");
-const greetings_text = greetings.querySelectorAll("li");
-greetings.addEventListener("mouseover", () => {
-    greetings_text[0].textContent = "Bonjour,";
-    greetings_text[1].textContent = "Je suis Phuoc!";
-});
-
-greetings.addEventListener("mouseout", () => {
-    greetings_text[0].textContent = "Hello,";
-    greetings_text[1].textContent = "I'm Phuoc!";
-});*/

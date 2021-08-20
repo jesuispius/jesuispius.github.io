@@ -1,55 +1,86 @@
+/* This file contains a general style for the project */
+
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
+
+/* My own colors setup */
 :root {
+    --yellow: #FFD54F;
+    --warning: #FFC107;
     --lightyellow: #fcf398;
     --lightestpurple: #ebc0fd;
     --lightmagenta: #e75eff;
-    --yellow: #FFD54F;
-    --warning: #FFC107;
 }
 
+/* TEXT COLOR */
+/* Text color magenta */
 .text-magenta {
     color: var(--lightmagenta);
 }
 
+
+/* BACKGROUND COLOR */
+/* Background color magenta */
 .bg-magenta {
     background-color: var(--lightmagenta);
 }
 
+
+/* BUTTON */
+/* Button with mageta background color */
 .btn-magenta-primary,
 .btn-magenta-primary:hover {
     background-color: var(--lightmagenta);
     color: black;
     border: 2px solid rgb(0, 0, 0);
+    border-radius: 18px;
 }
 
+.btn-magenta-primary:hover {
+    border-radius: 0px;
+    box-shadow:  2px 2px 0px #bd4dd1, -2px -2px 0px #ff6fff;
+}
+
+/* Button with mageta background color outlined */
 .btn-magenta-outline,
 .btn-magenta-outline:hover {
     background-color: black;
     color: var(--lightmagenta);
     border: 2px solid var(--lightmagenta);
+    border-radius: 18px;
+}
+
+.btn-magenta-outline:hover {
+    border-radius: 0px;
+    box-shadow:  4px 4px 0px #bd4dd1, -4px -4px 0px #ff6fff;
 }
 
 .btn-magenta-outline > a {
     text-decoration: none;
     color: var(--lightmagenta);
+    font-family: 'Roboto Mono', monospace;
 }
 
 .btn-magenta-primary > a {
     text-decoration: none;
     color: black;
+    font-family: 'Roboto Mono', monospace;
 }
 
-.resume-section hr {
+
+/* HORIZONTAL LINE STYLE */
+hr {
     color: #e75eff;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* BODY CONTENT STYLE */
 body {
     background-color: black;
     color: white;
