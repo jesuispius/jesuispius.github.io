@@ -8,7 +8,7 @@ This is my personal website/porfolio.
 
 My porfolio website is deployed by Github Pages.
 
-Please see my website at the following URL: [***jesuispius.github.io/porfolio.html***](jesuispius.github.io/porfolio.html)
+Please see my website at the following URL: [***jesuispius.github.io/porfolio.html***](https://jesuispius.github.io/porfolio.html)
 
 ---
 
