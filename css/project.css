@@ -76,7 +76,7 @@
     color: var(--yellow);
 }
 
-@media all and (max-width: 405px) { #project-section-subcontent-buttons a { font-size: 11px; } }
+@media all and (max-width: 405px) { #project-section-subcontent-buttons a { font-size: 18px; } }
 @media all and (max-width: 320px) { #project-section-subcontent-buttons a { font-size: 15px; } }
 @media all and (max-width: 991px) {
     #project-section-subcontent-text ul { padding-left: 0; }

@@ -22,7 +22,7 @@
 
   <body>
     <!-- INTRO & COVER SECTION-->
-    <div id="intro-section" class="main-section">
+    <div id="intro-section" class="main-section mb-xxl-5 pb-xxl-3">
       <div class="intro-section-container row gx-0">
         <!-- NAVIGATION BAR -->
         <div class="intro-porfolio-nav col-12 col-xl-6">
@@ -71,7 +71,16 @@
         <!-- INTRODUCTION MAIN CONTENT -->
         <main id="intro-section-main-content" class="col-12 col-xl-6">
           <div class="intro-porfolio-image">
-            <img src="image/photograph(2).png" alt="photograph" class="img-fluid" />
+            <img 
+              srcset="
+                image/photograph_375.png 375w,
+                image/photograph_414.png 414w,
+                image/photograph_570.png 570w,
+                image/photograph_720.png 720w,
+                image/photograph_990.png 990w,
+                image/photograph_1140.png 1140w
+              "
+              src="image/photograph_375.png" alt="photograph" class="img-fluid" loading="lazy"/>
           </div>
         </main>
       </div>
@@ -83,7 +92,7 @@
 
       <!-- ABOUT MAIN CONTENT -->
       <div class="about-content">
-        <img src="image/photograph_2.png" alt="Photograph of myself" id="self-image">
+        <img src="image/photograph_2.png" alt="Photograph of myself" id="self-image" loading="lazy">
         <blockquote>
           <span>&#8220</span>Hi! My name is <strong>Phuoc Nguyen</strong>. 
           An international student and a 3+ years Computer Science student at <strong>Portland State University</strong>.
@@ -104,7 +113,7 @@
 
             <!-- RESUME INTRODUCTION -->
             <div class="col-12 col-md-4 img text-center resume-content-self-image m-auto" data-aos="flip-up">
-              <img src="image/resume.jpg" alt="photograph-resume" />
+              <img src="image/resumeresize.jpg" alt="photograph-resume" loading="lazy"/>
             </div>
             <div class="resume-content-self-text col-12 col-md-8 mt-4 mt-md-0 ps-md-5">
               <p class="h2">PHUOC T. NGUYEN</p>
@@ -286,7 +295,7 @@
               </div>
             </div>
             <div class="col-12 col-lg-6">
-              <img src="image/weather.JPG" id="project-section-subcontent-img" class="img-fluid" width="100%" height="100%" alt="weather-app"/>
+              <img src="image/weather_resize.JPG" id="project-section-subcontent-img" class="img-fluid" width="100%" height="100%" alt="weather-app" loading="lazy"/>
             </div>
           </div>
         </div>
@@ -316,7 +325,7 @@
               </div>
             </div>
             <div class="col-12 col-lg-6">
-              <img src="image/attendance.JPG" id="project-section-subcontent-img" class="img-fluid" width="100%" height="100%" alt="weather-app"/>
+              <img src="image/attendance.JPG" id="project-section-subcontent-img" class="img-fluid" width="100%" height="100%" alt="weather-app" loading="lazy"/>
             </div>
           </div>
         </div>
@@ -337,7 +346,7 @@
               <p>* Since the project is in progress, I cannot share the website or source code links!</p>
             </div>
             <div class="col-12 col-lg-6">
-              <img src="image/aurora.JPG" id="project-section-subcontent-img" class="img-fluid"  width="100%" height="100%" alt="weather-app"/>
+              <img src="image/aurora.JPG" id="project-section-subcontent-img" class="img-fluid"  width="100%" height="100%" alt="weather-app" loading="lazy"/>
             </div>
           </div>
         </div>
@@ -412,7 +421,7 @@
     <script>
       AOS.init({
         once: true,
-        duration: 1500,
+        duration: 1200,
       });
     </script>
   </body>
