@@ -60,6 +60,7 @@
 #social-contact .btn-circle svg { padding-bottom: 1px; margin-bottom: 1px; }
 #social-contact a {
     color: #EA80FC;
+    background-color: black;
     font-size: 14px;
     text-decoration: none;
 }
@@ -78,6 +79,7 @@
     border: 2px solid var(--lightmagenta);
     border-radius: 20px;
 }
+.resume-content-education-school .period { text-decoration: none; color: white }
 .resume-content-education-school p.h4:first-child { color: var(--lightyellow); }
 
 .resume-content-skills {
