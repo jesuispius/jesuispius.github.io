@@ -48,22 +48,17 @@
     display: flex;
     flex-direction: row;
     gap: 2%;
-    margin-top: 15px;
+    margin-top: 18px;
+    justify-content: center;
 }
 
-#social-contact .btn-circle {
+#social-contact .btn-magenta-outline {
     vertical-align: middle;
-    border: 1px solid #EA80FC;
     padding: 6px 11px;
-}
-
-#social-contact .btn-circle svg { padding-bottom: 1px; margin-bottom: 1px; }
-#social-contact a {
-    color: #EA80FC;
-    background-color: black;
-    font-size: 14px;
+    font-weight: 700;
     text-decoration: none;
 }
+#social-contact .btn-magenta-outline svg { padding-bottom: 1px; margin-bottom: 1px; }
 
 .resume-content-obj {
     text-align: center;
@@ -117,5 +112,6 @@
 
 @media all and (min-width: 768px) { 
     #resume-content-self .row .img { border-right: dotted 1px #e75eff; }
+    #social-contact { justify-content: left; }
     .resume-content-education-school > .period { border-right: dotted 1px #e75eff; font-size: 15px; }
 }
