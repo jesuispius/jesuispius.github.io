@@ -1,32 +1,16 @@
-#intro-section {
-    display: flex;
-    height: 100%;
-    text-decoration: none;
-    color: white;
-    background: black;
-}
-
 .intro-section-container {
     margin: 0;
     padding: 16px;
     justify-content: center;
 }
 
-.intro-porfolio-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
 .intro-porfolio-nav-item {
     width: 100%;
     justify-content: center;
     font-family: 'Roboto Slab', serif;
-    align-self: flex-start;
 }
 
 .intro-porfolio-nav-item > .nav-link {
-    font-weight: 400;
     font-size: 17px;
     color: var(--warning);
     background-color: black;
@@ -41,18 +25,17 @@
     margin-right: auto;
     margin-left: auto;
     margin-top: 20px;
-    vertical-align: middle;
+    padding: 0;
     text-align: center;
     list-style: none;
     font-family: 'Domine', serif;
-    padding: 0;
+    
 }
 
 .intro-porfolio-text li {
     display: block;
     font-weight: 1000;
     text-align: center;
-    color: var(--lightyellow);
     font-size: 30px;
 }
 
@@ -104,16 +87,20 @@
     border-radius: 0 0 44.2% 43%;
 }
 
+@media all and (min-width: 1000px) {
+    .intro-porfolio-text li { font-size: 55px; }
+    .intro-porfolio-text li:first-child { font-size: 30px; }
+    .intro-porfolio-text li h6 { font-size: 18px; }
+}
+
 @media all and (min-width: 1200px) {
     .intro-porfolio-image img { width: 90%; height: auto; }
 
     .intro-porfolio-text li {
-        font-size: 65px;
+        font-size: 60px;
         text-align: left;
         padding-left: 40px;
     }
-    .intro-porfolio-text li:first-child { font-size: 35px; }
-    .intro-porfolio-text li h6 { font-size: 18px; }
     .intro-porfolio-text li#list-icons-social { display: flex; }
 }
 
@@ -147,7 +134,7 @@
     }
 
     .intro-porfolio-nav-item.active { left: 0; }
-    .intro-porfolio-nav-item.active > .nav-link { border-bottom: unset; }
+    .intro-porfolio-nav-item.active > .nav-link { border-bottom: black; }
     .intro-porfolio-nav-item.active > .nav-link:hover, .intro-porfolio-nav-item.active > .nav-link:focus { border-bottom: unset; }
 
     .intro-porfolio-nav-menu {

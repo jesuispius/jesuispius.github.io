@@ -20,6 +20,9 @@
     color: black;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 .btn-magenta-primary:hover {
     border-radius: 0px;
@@ -32,6 +35,9 @@
     color: var(--lightmagenta);
     border: 2px solid var(--lightmagenta);
     border-radius: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 .btn-magenta-outline:hover {
     border-radius: 0px;
@@ -68,7 +74,6 @@ body {
     font-weight: bold;
     font-family: 'Roboto Mono', monospace;
     color:  #e75eff;
-    padding-top: 20px;
 }
 
 .h2 { font-size: 1.5em; font-weight: bolder; }

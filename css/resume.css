@@ -80,7 +80,7 @@
     border-radius: 20px;
 }
 .resume-content-education-school .period { text-decoration: none; color: white }
-.resume-content-education-school p.h4:first-child { color: var(--lightyellow); }
+.resume-content-education-school p.h4:first-child { color: var(--warning); }
 
 .resume-content-skills {
     padding: 5%;
