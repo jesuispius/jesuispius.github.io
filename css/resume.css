@@ -19,11 +19,7 @@
     font-family: 'Roboto Mono', monospace;
     color:  #e75eff;
 }
-
-.resume-header-tab .vertical-line:nth-child(2n + 1) {
-    border-right: 3px dotted #e75eff;
-    margin: 10px;
-}
+.resume-header-tab .vertical-line:nth-child(2n + 1) { border-right: 3px dotted #e75eff; margin: 10px; }
 
 #resume-content-self {
     padding: 20px;
@@ -56,6 +52,7 @@
     vertical-align: middle;
     padding: 6px 11px;
     font-weight: 700;
+    font-size: 12px;
     text-decoration: none;
 }
 #social-contact .btn-magenta-outline svg { padding-bottom: 1px; margin-bottom: 1px; }
