@@ -71,9 +71,12 @@
         <!-- INTRODUCTION MAIN CONTENT -->
         <main id="intro-section-main-content" class="col-12 col-xl-6">
           <div class="intro-porfolio-image">
-            <img
-              src="image/photograph_990.png"
-              alt="photograph" class="img-fluid" loading="lazy"/>
+            <picture>
+              <source media="(min-width: 1140px)" srcset="image/photograph_1140.png"/>
+              <source media="(min-width: 990px)" srcset="image/photograph_990.png"/>
+              <source media="(min-width: 720px)" srcset="image/photograph_720.png"/>
+              <img src="image/photograph_720.png" alt="photograph" class="img-fluid"/>
+            </picture>
           </div>
         </main>
       </div>
@@ -184,7 +187,7 @@
           <div class="resume-content-education">
             <div class="row justify-content-center resume-content-education-school">
               <div class="col-12 col-md-3 period ps-4 ps-md-0">
-                09/2020 - present
+                Sept 2020 - present
               </div>
               <div class="col-12 col-md-6 resume-content-education-text ms-md-4 ps-4">
                 <p class="h4 fw-bold">Portland State University</p>
@@ -206,7 +209,7 @@
             <hr />
             <div class="row justify-content-center resume-content-education-school">
               <div class="col-12 col-md-3 period ps-4 ps-md-0">
-                04/2018 - 06/2020
+                April 2018 - June 2020
               </div>
               <div class="col-12 col-md-6 resume-content-education-text ms-md-4 ps-4">
                 <p class="h4 fw-bold">Portland Community College</p>
