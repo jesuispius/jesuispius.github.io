@@ -1,5 +1,3 @@
-
-
 let intro_main_location = document.getElementById("intro-section-main-content");
 
 function backToTop() {

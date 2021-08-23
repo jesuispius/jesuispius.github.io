@@ -95,6 +95,15 @@
 }
 .resume-content-languages li { font-size: 15px; }
 
+#resume-pdf > a {
+    text-align: center;
+    margin-top: 20px;
+    color: #e75eff; 
+    text-decoration: none; 
+    font-style: italic;
+    font-size: medium;
+}
+
 @media all and (max-width: 360px) {
     .resume-content-self-text .h2 { font-size: 20px; }
     .resume-content-self-text .h5 { font-size: 14px; }

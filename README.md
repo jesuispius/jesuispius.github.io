@@ -8,7 +8,7 @@ This is my personal website/porfolio.
 
 My porfolio website is deployed by Github Pages.
 
-Please see my website at the following URL: [***https://jesuispius.github.io/porfolio.html***](https://jesuispius.github.io/porfolio.html)
+Please see my website at the following URL:  https://jesuispius.github.io/porfolio.html
 
 ---
 
@@ -20,24 +20,30 @@ So, to run/view this project, we can simply open the `porfolio.html` file on a w
 
 ---
 
-## How's my website built
+## How my website's built
 
 1. My website is built by using HTML, CSS, and JavaScript.
 
     - I write my own HTML, CSS, and JavaScript code. I break down into multiple css and JavaScript files to maintain. This is how they are called in porfolio.html:
 
-        ```html
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/intro.css" />
-        <link rel="stylesheet" href="css/about.css" />
-        <link rel="stylesheet" href="css/resume.css" />
-        <link rel="stylesheet" href="css/project.css" />
-        <link rel="stylesheet" href="css/contact.css" />
+    ``` bash
+        jesuispius.github.io/
+        ├─ css/
+        │  ├─ resume.css
+        │  ├─ project.css
+        │  ├─ contact.css
+        │  ├─ style.css
+        │  ├─ intro.css
+        │  ├─ about.css
+        ├─ js/
+        │  ├─ resume.js
+        │  ├─ backToTop.js
+        │  ├─ navbar.js
+        ├─ porfolio.html
 
-        <script defer src="js/navbar.js"></script>
-        <script defer src="js/resume.js"></script>
-        <script defer src="js/backToTop.js"></script>
-        ```
+    ```
+
+    - In the backToTop.js and navbar.js, I have used the pure JavaScript code, but in the resume.js, I have used the Jquery to render list of information instead of using a plenty of HTML lines of code.
 
 2. Besides, I also use some  [***Bootstrap***](https://getbootstrap.com/) CSS Framework's classes.
 
@@ -45,9 +51,6 @@ So, to run/view this project, we can simply open the `porfolio.html` file on a w
 
         ```html
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" />
-        ```
-
-        ```html
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
         ```
 
@@ -59,9 +62,6 @@ So, to run/view this project, we can simply open the `porfolio.html` file on a w
 
         ```html
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        ```
-
-        ```html
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
         AOS.init({
