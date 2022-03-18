@@ -1,9 +1,10 @@
 $(document).ready(function () {
     // Render the skills items //
     const skill_items = [
-        "C++", "Python", "Java", "JavaScript", 
-        "TypeScript", "HTML", "CSS", "Flask", 
-        "SQL", "Node.js", "React", "Bootstrap", "Materialize"
+        "Python", "JavaScript", "C++", "React", "Java",
+        "Streamlit", "HTML", "CSS", "Flask", "Node.js",
+        "Bootstrap", "Tailwind", "SQL", "PostgreSQL",
+        "TypeScript", "Express", "BlitzJS"
     ];
 
     let render_item = $("<div></div>").addClass("resume-content-skills-items");
